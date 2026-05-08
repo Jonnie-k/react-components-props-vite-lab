@@ -3,7 +3,7 @@ import blog from "../data/blog";
 
 import Header from "./Header";
 import About from "./About";
-import ArticleList from "./ArticleList.jsx"; // Added explicit .jsx extension
+import ArticleList from "./ArticleList";
 
 function App() {
   return (
