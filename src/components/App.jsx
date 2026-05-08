@@ -1,20 +1,25 @@
 import blog from "../blog";
-
 import Header from "./Header";
 import About from "./About";
 import ArticleList from "./ArticleList";
 
 function App() {
   return (
-    <div>
-      <Header name={blog.name} />
+    <div className="App">
+      <header>
+        <Header name={blog.name} />
+      </header>
 
-      <About
-        about={blog.about}
-        image={blog.image}
-      />
+      <aside>
+        <About
+          about={blog.about}
+          image={blog.image}
+        />
+      </aside>
 
-      <ArticleList posts={blog.posts} />
+      <main>
+        <ArticleList posts={blog.posts} />
+      </main>
     </div>
   );
 }
