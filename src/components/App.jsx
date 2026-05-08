@@ -1,9 +1,9 @@
 import React from "react";
-import blog from "../data/blog"; 
+import blog from "../data/blog";
 
 import Header from "./Header";
 import About from "./About";
-import ArticleList from "./ArticleList";
+import ArticleList from "./ArticleList.jsx"; // Added explicit .jsx extension
 
 function App() {
   return (

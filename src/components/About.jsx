@@ -1,6 +1,6 @@
 import React from "react";
-function About({ about, image = "placeholder.com" }) {
 
+function About({ about, image = "placeholder.com" }) {
   return (
     <aside>
       <img src={image} alt="blog logo" />
