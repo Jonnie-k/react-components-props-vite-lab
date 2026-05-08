@@ -1,21 +1,21 @@
 import React from "react";
-import blogData from "../data/blog"; // Adjusted path to standard data location
+import blog from "../data/blog"; 
 
 import Header from "./Header";
 import About from "./About";
-import ArticleList from "../components/ArticleList"; // Explicit path fix for components
+import ArticleList from "./ArticleList";
 
 function App() {
   return (
     <div className="App">
-      <Header name={blogData.name} />
+      <Header name={blog.name} />
 
       <About
-        about={blogData.about}
-        image={blogData.image}
+        about={blog.about}
+        image={blog.image}
       />
 
-      <ArticleList posts={blogData.posts} />
+      <ArticleList posts={blog.posts} />
     </div>
   );
 }
