@@ -1,10 +1,11 @@
-function About({ about, image = "https://via.placeholder.com/215" }) {
-  return (
-    <aside>
-      <img src={image} alt="blog logo" />
-      <p>{about}</p>
-    </aside>
-  );
-}
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./components/App";
+import "./index.css";
 
-export default About;
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
