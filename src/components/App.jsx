@@ -9,12 +9,7 @@ function App() {
   return (
     <div className="App">
       <Header name={blog.name} />
-
-      <About
-        about={blog.about}
-        image={blog.image}
-      />
-
+      <About about={blog.about} image={blog.image} />
       <ArticleList posts={blog.posts} />
     </div>
   );
